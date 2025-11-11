@@ -18,14 +18,15 @@ public class GamePlay {
 
             Player player = new Player(name);
             allPlayers.add(player);
-
-
         }
-
+        // ask if we are ready to start the game
         System.out.println("Are all the players ready: ");
         for (Player people : allPlayers) {
+            people.drawCard();
             System.out.println(people + "?");
+            System.out.println(people.printHand());
         }
+
     }
 
 
