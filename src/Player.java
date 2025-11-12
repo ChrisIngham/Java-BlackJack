@@ -24,10 +24,11 @@ public class Player extends Card{
     public String printHand(){
         String output = "";
         for (String cards : this.hand){
-            output = " " + cards;
+            output += cards + ", ";
         }
         return output;
     }
+
     public String toString(){
         return this.name;
     }
