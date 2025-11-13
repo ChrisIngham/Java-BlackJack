@@ -29,6 +29,10 @@ public class Player extends Card{
         return output;
     }
 
+    public int printTotal(){
+        return calculateHand(this.hand);
+    }
+
     public String toString(){
         return this.name;
     }
